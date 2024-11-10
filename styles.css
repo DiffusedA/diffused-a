@@ -17,60 +17,87 @@ body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) {
+/* Responsive Images */
+img {
+    max-width: 100%;  /* Make images responsive */
+    height: auto;
+}
+
+/* Responsive Videos */
+video {
+    width: 100%;      /* Make video responsive */
+    height: auto;
+}
+
+/* Desktop / Laptop Styles */
+@media screen and (min-width: 1024px) {
     body {
-        font-size: 14px; /* Adjust font size */
-    }
-    
-    h1, h2, h3 {
-        font-size: 18px; /* Smaller headers for mobile */
+        padding: 20px;
     }
 
-    .header-image {
-        width: 100%; /* Make the header image responsive */
-        height: auto;
+    .container {
+        width: 80%;         /* Centered container with padding */
+        margin: 0 auto;
     }
 
-    nav ul {
-        padding: 0;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: inline-block;
-        margin-right: 15px;
-    }
-
+    /* Larger Buttons */
     button {
-        width: 100%; /* Make buttons full width on mobile */
-        padding: 15px;
-        font-size: 16px;
+        font-size: 1.2em;
+        padding: 15px 30px;
     }
 
-    .Image {
-        max-width: 100%; /* Make images fit on mobile */
-        height: auto;
+    /* Headers */
+    h1, h2, h3 {
+        font-size: 1.5em;   /* Larger text for desktops */
     }
 }
 
-/* Media Query for Very Small Screens (e.g., mobile phones) */
-@media screen and (max-width: 480px) {
+/* Tablet Styles */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
     body {
-        font-size: 12px;
+        padding: 15px;
     }
 
-    h1, h2 {
-        font-size: 16px;
+    .container {
+        width: 90%;        /* Slightly smaller container */
+        margin: 0 auto;
     }
 
-    .header-image {
-        width: 100%;
-        height: auto;
+    /* Medium Buttons */
+    button {
+        font-size: 1em;
+        padding: 12px 24px;
     }
 
-    .button-link {
-        font-size: 14px;
+    h1, h2, h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;        /* Full-width container on mobile */
+    }
+
+    /* Mobile Buttons */
+    button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+        width: 100%;        /* Full-width buttons for easy tapping */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.1em;
+    }
+
+    /* Centering the Text */
+    p, h1, h2, h3 {
+        text-align: center;
     }
 }
 
