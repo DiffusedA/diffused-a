@@ -15,38 +15,20 @@ body {
     background-size: contain; /* Adjusts the image to fit within the container */
     background-position: center;
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    margin: 0; /* Remove default margins */
-    padding: 0;
 }
 
-/* Basic Image and Video Responsiveness */
-img, video {
-    max-width: 100%; /* Make images and videos scale with their container */
-    height: auto;
-    display: block; /* Remove extra space below */
-    margin: 0 auto; /* Center-align images and videos */
-}
-
-/* Responsive Container */
-.container {
-    width: 90%; /* Default container width */
-    max-width: 1200px; /* Limit width for larger screens */
-    margin: 0 auto;
-    padding: 15px;
-}
-
-/* Media Query for Tablet Devices */
-@media screen and (max-width: 768px) {
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 512px) {
     body {
         font-size: 14px; /* Adjust font size */
     }
-
+    
     h1, h2, h3 {
         font-size: 18px; /* Smaller headers for mobile */
     }
 
     .header-image {
-        width: 100%; /* Make header image responsive */
+        width: 100%; /* Make the header image responsive */
         height: auto;
     }
 
@@ -61,7 +43,7 @@ img, video {
     }
 
     button {
-        width: 100%; /* Make buttons full width on mobile */
+        width: 50%; /* Make buttons full width on mobile */
         padding: 15px;
         font-size: 16px;
     }
@@ -72,7 +54,7 @@ img, video {
     }
 }
 
-/* Media Query for Very Small Screens (Mobile Phones) */
+/* Media Query for Very Small Screens (e.g., mobile phones) */
 @media screen and (max-width: 480px) {
     body {
         font-size: 12px;
@@ -90,12 +72,7 @@ img, video {
     .button-link {
         font-size: 14px;
     }
-
-    button {
-        padding: 10px; /* Smaller padding on smaller screens */
-    }
 }
-
 
 
 /* Header */
