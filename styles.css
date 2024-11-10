@@ -15,91 +15,87 @@ body {
     background-size: contain; /* Adjusts the image to fit within the container */
     background-position: center;
     background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0; /* Remove default margins */
+    padding: 0;
 }
 
-/* Responsive Images */
-img {
-    max-width: 100%;  /* Make images responsive */
+/* Basic Image and Video Responsiveness */
+img, video {
+    max-width: 100%; /* Make images and videos scale with their container */
     height: auto;
+    display: block; /* Remove extra space below */
+    margin: 0 auto; /* Center-align images and videos */
 }
 
-/* Responsive Videos */
-video {
-    width: 100%;      /* Make video responsive */
-    height: auto;
+/* Responsive Container */
+.container {
+    width: 90%; /* Default container width */
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto;
+    padding: 15px;
 }
 
-/* Desktop / Laptop Styles */
-@media screen and (min-width: 1024px) {
+/* Media Query for Tablet Devices */
+@media screen and (max-width: 768px) {
     body {
-        padding: 20px;
-    }
-
-    .container {
-        width: 80%;         /* Centered container with padding */
-        margin: 0 auto;
-    }
-
-    /* Larger Buttons */
-    button {
-        font-size: 1.2em;
-        padding: 15px 30px;
-    }
-
-    /* Headers */
-    h1, h2, h3 {
-        font-size: 1.5em;   /* Larger text for desktops */
-    }
-}
-
-/* Tablet Styles */
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    body {
-        padding: 15px;
-    }
-
-    .container {
-        width: 90%;        /* Slightly smaller container */
-        margin: 0 auto;
-    }
-
-    /* Medium Buttons */
-    button {
-        font-size: 1em;
-        padding: 12px 24px;
+        font-size: 14px; /* Adjust font size */
     }
 
     h1, h2, h3 {
-        font-size: 1.3em;
-    }
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 767px) {
-    body {
-        padding: 10px;
+        font-size: 18px; /* Smaller headers for mobile */
     }
 
-    .container {
-        width: 100%;        /* Full-width container on mobile */
+    .header-image {
+        width: 100%; /* Make header image responsive */
+        height: auto;
     }
 
-    /* Mobile Buttons */
-    button {
-        font-size: 0.9em;
-        padding: 10px 20px;
-        width: 100%;        /* Full-width buttons for easy tapping */
-    }
-
-    h1, h2, h3 {
-        font-size: 1.1em;
-    }
-
-    /* Centering the Text */
-    p, h1, h2, h3 {
+    nav ul {
+        padding: 0;
         text-align: center;
     }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    button {
+        width: 100%; /* Make buttons full width on mobile */
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .Image {
+        max-width: 100%; /* Make images fit on mobile */
+        height: auto;
+    }
 }
+
+/* Media Query for Very Small Screens (Mobile Phones) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1, h2 {
+        font-size: 16px;
+    }
+
+    .header-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .button-link {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px; /* Smaller padding on smaller screens */
+    }
+}
+
 
 
 /* Header */
