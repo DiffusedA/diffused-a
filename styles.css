@@ -17,6 +17,60 @@ body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
+
+
+
+
+/* Navigation Styling */
+nav {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center align the menu items */
+    gap: 20px; /* Spacing between items */
+}
+
+nav ul li {
+    display: inline; /* Inline display for list items */
+}
+
+nav ul li a {
+    font-family: "Times New Roman", serif; /* Apply Times New Roman */
+    font-size: 18px; /* Default font size */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    padding: 10px 15px; /* Add padding around text */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    border-radius: 4px; /* Rounded corners for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #78888d; /* Highlight with gold color */
+    color: #ffffff; /* White text on hover */
+    transform: scale(1.2); /* Increase the size of the entire element */
+    font-size: 20px; /* Increase font size specifically */
+    text-decoration: none; /* Ensure no underline on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 512px) {
     body {
