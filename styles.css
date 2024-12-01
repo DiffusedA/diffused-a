@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: "Times New Roman", serif; /* Apply Times New Roman */
+    font-family: "Arial", bold; /* Apply Times New Roman */
     font-size: 18px; /* Default font size */
     text-decoration: none; /* Remove underline */
     color: #333; /* Dark text color */
@@ -329,16 +329,50 @@ form button {
 }
 
 
-/* Footer */
+
+
+
+/* Footer Styling */
 footer {
+    background-color: #b9b9b9;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
-    background-color: #000000;
-    color: #ffffff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    font-family: Arial, sans-serif;
 }
+
+footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+/* Social Media Styling */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-link {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icon {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+    border-radius: 50%; /* Makes the icon circular */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    transition: transform 0.3s, filter 0.3s; /* Hover effect */
+    border: 2px solid #ffffff; /* Optional border for better visibility */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slight enlargement on hover */
+    filter: brightness(1.2); /* Brightening effect on hover */
+}
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
